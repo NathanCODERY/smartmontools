@@ -883,9 +883,9 @@ const drive_settings builtin_knowndrives[] = {
   },
   { "BIWIN Enterprise SATA SSDs",
     "BIWIN_SS821_(CSE25|CSM80)Y88A(10|N0)-(240G|480G|960G|1T9|3T8|7T6)" // tested with
-      //
+      // BIWIN_SS821_CSE25Y88A10-480G/BWG01T05, CSM80Y88AN0-480G/BWG01T05
     "BIWIN_SS811_CSE25H68A(K0|N0)-(480G|960G|1T9|3T8)", // tested with
-      //
+      // BIWIN_SS821_CSE25H68AK0-480G/BWG02T02, CSE25H68AN0-480G/BWG02T02
     "", "",
   //"-v 1,raw48,Raw_Read_Error_Rate "
     "-v 5,raw48,Reallocated_Sector_Count "
@@ -907,6 +907,8 @@ const drive_settings builtin_knowndrives[] = {
     "-v 197,raw48,Current_Pending_Sector "
   //"-v 198,raw48,Offline_Uncorrectable "
     "-v 199,raw48,CRC_Error_Count "
+  //"-v 202,raw48,Percent_Lifetime_Remain "
+  //"-v 206,raw48,Write_Error_Rate "
     "-v 225,raw48,Host_Writes "
     "-v 226,raw48,Timed_Workload_Media_Wear "
     "-v 227,raw48,Timed_Workload_Host_Read/Write_Ratio "
@@ -918,6 +920,8 @@ const drive_settings builtin_knowndrives[] = {
     "-v 242,raw48,Total_LBAs_Read "
     "-v 243,raw48,Total_Bytes_Written "
     "-v 245,raw48,Media_Wearout_Indicator "
+  //"-v 247,raw48,Host_Program_Page_Count "
+  //"-v 248,raw48,Bckgnd_Program_Page_Cnt"
   },
   { "SandForce Driven SSDs", // Corsair Force LS with buggy firmware only
     "Corsair Force LS SSD", // tested with Corsair Force LS SSD/S9FM01.8
